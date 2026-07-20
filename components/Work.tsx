@@ -5,23 +5,23 @@ import { Play } from 'lucide-react';
 
 export default function Work() {
   return (
-    <section id="work" className="py-28 md:py-40">
+    <section id="work" className="py-20 md:py-28 lg:py-40">
       <div className="mx-auto w-[min(92%,1300px)]">
-        <div className="flex flex-wrap items-end justify-between gap-6 mb-14">
+        <div className="flex flex-wrap items-end justify-between gap-4 md:gap-6 mb-10 md:mb-14">
           <div>
             <p className="text-xs uppercase tracking-[0.25em] text-accent">
               02 — Portfolio
             </p>
-            <h2 className="mt-4 font-display text-4xl md:text-6xl font-light">
+            <h2 className="mt-4 font-display text-3xl md:text-4xl lg:text-6xl font-light">
               Featured Work
             </h2>
           </div>
-          <p className="max-w-md text-muted-foreground">
+          <p className="max-w-md text-sm md:text-base text-muted-foreground">
             A curated selection of cinematic commercials, AI-generated product
             films and short-form campaigns.
           </p>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
           {projects.map((project) => (
             <article
               key={project.id}
@@ -36,17 +36,17 @@ export default function Work() {
                   playsInline
                 />
               </div>
-              <div className="p-6">
-                <div className="flex items-baseline justify-between gap-4">
-                  <h3 className="font-display text-2xl">{project.title}</h3>
+              <div className="p-4 md:p-6">
+                <div className="flex items-baseline justify-between gap-2 md:gap-4">
+                  <h3 className="font-display text-lg md:text-xl lg:text-2xl line-clamp-1">{project.title}</h3>
                   <span className="text-[10px] uppercase tracking-widest text-accent shrink-0">
                     {String(project.id).padStart(2, '0')} / {String(projects.length).padStart(2, '0')}
                   </span>
                 </div>
-                <p className="mt-2 text-sm text-muted-foreground line-clamp-2 min-h-10">
+                <p className="mt-2 text-xs md:text-sm text-muted-foreground line-clamp-2 min-h-[2.5rem] md:min-h-10">
                   {project.description}
                 </p>
-                <div className="mt-4 flex flex-wrap gap-1.5 text-[11px]">
+                <div className="mt-3 md:mt-4 flex flex-wrap gap-1 md:gap-1.5 text-[10px] md:text-[11px]">
                   {project.skills.slice(0, 3).map((skill, index) => (
                     <span key={index} className="text-muted-foreground/50 italic text-xs">
                       {skill}

@@ -41,12 +41,12 @@ export default function Contact() {
         <p className="text-xs uppercase tracking-[0.25em] text-accent">
           07 — Contact
         </p>
-        <h2 className="mt-4 font-display text-5xl md:text-7xl lg:text-8xl font-light leading-[0.95] text-balance max-w-5xl">
+        <h2 className="mt-4 font-display text-4xl md:text-5xl lg:text-7xl font-light leading-[0.95] text-balance max-w-5xl">
           Let's create something <em className="italic gold-gradient-text">amazing</em>{' '}
           together.
         </h2>
-        <div className="mt-20 grid lg:grid-cols-12 gap-10">
-          <form className="lg:col-span-7 glass rounded-3xl p-8 md:p-10 space-y-5">
+        <div className="mt-12 md:mt-20 grid lg:grid-cols-12 gap-8 lg:gap-10">
+          <form className="lg:col-span-7 glass rounded-3xl p-6 md:p-8 lg:p-10 space-y-5">
             <div className="grid md:grid-cols-2 gap-5">
               <label className="block">
                 <span className="text-[11px] uppercase tracking-widest text-muted-foreground">
@@ -105,24 +105,24 @@ export default function Contact() {
                 href={contact.href}
                 target="_blank"
                 rel="noreferrer"
-                className="group flex items-center justify-between glass rounded-2xl p-5 hover:bg-secondary transition-colors"
+                className="group flex items-center justify-between glass rounded-2xl p-4 md:p-5 hover:bg-secondary transition-colors"
               >
-                <div className="flex items-center gap-4">
-                  <div className="size-11 rounded-full glass-strong grid place-items-center">
+                <div className="flex items-center gap-3 md:gap-4">
+                  <div className="size-10 md:size-11 rounded-full glass-strong grid place-items-center shrink-0">
                     {contact.isLucide ? (
                       <contact.icon className="size-4 text-accent" aria-hidden="true" />
                     ) : (
                       <contact.icon className="size-4 text-accent" aria-hidden="true" />
                     )}
                   </div>
-                  <div>
-                    <div className="text-[11px] uppercase tracking-widest text-muted-foreground">
+                  <div className="min-w-0">
+                    <div className="text-[10px] md:text-[11px] uppercase tracking-widest text-muted-foreground">
                       {contact.label}
                     </div>
-                    <div className="text-sm">{contact.value}</div>
+                    <div className="text-sm truncate">{contact.value}</div>
                   </div>
                 </div>
-                <ArrowUpRight className="size-4 text-muted-foreground group-hover:text-accent transition-colors" />
+                <ArrowUpRight className="size-4 text-muted-foreground group-hover:text-accent transition-colors shrink-0" />
               </a>
             ))}
           </div>

@@ -1,17 +1,17 @@
 export default function About() {
   return (
-    <section id="about" className="py-28 md:py-40">
-      <div className="mx-auto w-[min(92%,1200px)] grid md:grid-cols-12 gap-10">
+    <section id="about" className="py-20 md:py-28 lg:py-40">
+      <div className="mx-auto w-[min(92%,1200px)] grid md:grid-cols-12 gap-8 md:gap-10">
         <div className="md:col-span-4">
           <p className="text-xs uppercase tracking-[0.25em] text-accent">
             01 — About
           </p>
-          <h2 className="mt-4 font-display text-4xl md:text-5xl font-light">
+          <h2 className="mt-4 font-display text-3xl md:text-4xl lg:text-5xl font-light">
             A creative built for the <em className="italic">post-AI</em>{' '}
             commercial era.
           </h2>
         </div>
-        <div className="md:col-span-7 md:col-start-6 space-y-6 text-lg text-muted-foreground leading-relaxed">
+        <div className="md:col-span-7 md:col-start-6 space-y-4 md:space-y-6 text-base md:text-lg text-muted-foreground leading-relaxed">
           <p>
             I'm Favour Williams — a video creator specialising in cinematic
             AI-generated product commercials, creative advertising, and premium

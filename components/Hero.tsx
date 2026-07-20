@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative min-h-screen grain flex items-center pt-32 pb-20 overflow-hidden"
+      className="relative min-h-screen grain flex items-center pt-24 md:pt-32 pb-16 md:pb-20 overflow-hidden"
     >
       <div
         className="absolute inset-0 -z-10 opacity-70"
@@ -60,30 +60,30 @@ export default function Hero() {
           </a>
         </div>
         <div
-          className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-border pt-10 animate-float-up"
+          className="mt-16 md:mt-24 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 border-t border-border pt-8 md:pt-10 animate-float-up"
           style={{ animationDelay: '320ms' }}
         >
           <div>
-            <div className="font-display text-3xl md:text-4xl">50+</div>
-            <div className="mt-1 text-xs uppercase tracking-widest text-muted-foreground">
+            <div className="font-display text-2xl md:text-3xl lg:text-4xl">50+</div>
+            <div className="mt-1 text-[10px] md:text-xs uppercase tracking-widest text-muted-foreground">
               Frames per second
             </div>
           </div>
           <div>
-            <div className="font-display text-3xl md:text-4xl">8+</div>
-            <div className="mt-1 text-xs uppercase tracking-widest text-muted-foreground">
+            <div className="font-display text-2xl md:text-3xl lg:text-4xl">8+</div>
+            <div className="mt-1 text-[10px] md:text-xs uppercase tracking-widest text-muted-foreground">
               Signature projects
             </div>
           </div>
           <div>
-            <div className="font-display text-3xl md:text-4xl">100%</div>
-            <div className="mt-1 text-xs uppercase tracking-widest text-muted-foreground">
+            <div className="font-display text-2xl md:text-3xl lg:text-4xl">100%</div>
+            <div className="mt-1 text-[10px] md:text-xs uppercase tracking-widest text-muted-foreground">
               Brand-focused
             </div>
           </div>
           <div>
-            <div className="font-display text-3xl md:text-4xl">24h</div>
-            <div className="mt-1 text-xs uppercase tracking-widest text-muted-foreground">
+            <div className="font-display text-2xl md:text-3xl lg:text-4xl">24h</div>
+            <div className="mt-1 text-[10px] md:text-xs uppercase tracking-widest text-muted-foreground">
               First response
             </div>
           </div>
