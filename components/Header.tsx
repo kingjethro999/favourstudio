@@ -1,10 +1,28 @@
 'use client';
 
 import { ArrowUpRight, Menu, X } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setMobileMenuOpen(false);
+      }
+    };
+
+    if (mobileMenuOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [mobileMenuOpen]);
 
   return (
     <header className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[min(96%,1200px)]">
@@ -62,7 +80,7 @@ export default function Header() {
       </nav>
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 mt-2 glass rounded-2xl p-6 space-y-4">
+        <div ref={menuRef} className="md:hidden absolute top-full left-0 right-0 mt-2 glass rounded-2xl p-6 space-y-4">
           <a
             href="#work"
             onClick={() => setMobileMenuOpen(false)}
