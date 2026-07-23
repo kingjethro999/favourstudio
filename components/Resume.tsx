@@ -3,10 +3,14 @@
 import { Download, Eye, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
-import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
-import 'react-pdf/dist/esm/Page/TextLayer.css';
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
+// react-pdf v10 ships the layer styles at `react-pdf/dist/Page/...` (NOT the
+// old `dist/esm/Page/...` path). These files set the `--react-pdf-text-layer`
+// and `--react-pdf-annotation-layer` CSS vars that react-pdf's runtime checks
+// for, so importing them both styles the layers AND silences the
+// "styles not found" warning.
+import 'react-pdf/dist/Page/TextLayer.css';
+import 'react-pdf/dist/Page/AnnotationLayer.css';
 
 export default function Resume() {
   const [showPreview, setShowPreview] = useState(false);
@@ -16,6 +20,10 @@ export default function Resume() {
   const resumeUrl = '/FavourWilliamsCV.pdf';
 
   useEffect(() => {
+    // pdfjs references browser globals (DOMMatrix); only set up the worker
+    // in the browser to avoid breaking Next.js server prerender.
+    pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
+
     const updateWidth = () => {
       setPdfWidth(Math.min(800, window.innerWidth - 64));
     };
@@ -88,8 +96,8 @@ export default function Resume() {
                   <Page
                     key={`page_${index + 1}`}
                     pageNumber={index + 1}
-                    renderAnnotationLayer={false}
-                    renderTextLayer={false}
+                    renderAnnotationLayer
+                    renderTextLayer
                     className="shadow-lg"
                     width={pdfWidth}
                   />

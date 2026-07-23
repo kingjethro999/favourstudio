@@ -6,7 +6,7 @@ import Work from '@/components/Work';
 import Services from '@/components/Services';
 import Tools from '@/components/Tools';
 import WhyMe from '@/components/WhyMe';
-import Resume from '@/components/Resume';
+import Resume from '@/components/ResumeLoader';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
