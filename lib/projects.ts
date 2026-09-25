@@ -25,7 +25,7 @@ export const projects: Project[] = [
     videoUrl: "https://www.dropbox.com/scl/fi/4uv5di83805713nohhfkc/VID-20260717-WA0002.mp4?rlkey=58c0r1kjb0py5v3pz2zpmjy7g&st=l5yk4yn1&raw=1",
     skills: ["AI Product Animation", "CGI Product Commercials", "3D Motion Design", "Product Visualization", "Motion Graphics", "Cinematic Lighting", "Camera Animation", "Visual Storytelling", "Video Editing", "CapCut", "Prompt Engineering", "AI Video Generation"],
     industry: ["Food & Beverage", "Advertising & Marketing", "Consumer Packaged Goods (CPG)"],
-    category: ["CGI Product Commercial", "Product Animation", "3D Commercial", "BrandADVERTISEMENT", "Motion Design Portfolio"]
+    category: ["CGI Product Commercial", "Product Animation", "3D Commercial", "Brand Advertisement", "Motion Design Portfolio"]
   },
   {
     id: 3,
@@ -53,5 +53,41 @@ export const projects: Project[] = [
     skills: ["Dynamic Editing", "Audio Engineering", "Visual Effects", "Motion Design", "Post-Production"],
     industry: ["Energy Drinks", "Consumer Packaged Goods"],
     category: ["CGI Products Commercial Video", "Motion Graphics & Visual Effects", "Product Videography & Commercials", "Social Media Content Creation"]
+  },
+  {
+    id: 6,
+    title: "Olipop Cherry Cola",
+    description: "A conceptual promotional spot created using advanced AI video generation tools to showcase dynamic macro product cinematography, fluid simulations, and lifestyle brand storytelling.",
+    videoUrl: "https://www.dropbox.com/scl/fi/0q20qdho0jjas0284e4rp/VID-20260925-WA0183.mp4?rlkey=stp509lbd1fzr9hrdprghdkcp&st=mx586myt&raw=1",
+    skills: ["AI Product Animation", "Fluid Dynamics", "Motion Design", "Visual Effects", "Google Flow", "Runway ML", "CapCut", "Sound Design"],
+    industry: ["Food & Beverage", "Advertising & Marketing", "Consumer Packaged Goods (CPG)"],
+    category: ["CGI Product Commercial", "AI Product Animation", "Beverage Commercial", "Motion Design Portfolio"]
+  },
+  {
+    id: 7,
+    title: "Nuxe Huile Prodigieuse Or",
+    description: "A conceptual promotional spot created using advanced AI video generation tools to showcase luxurious gold fluid simulations, skin-texture macro details, and elegant cosmetic brand storytelling.",
+    videoUrl: "https://www.dropbox.com/scl/fi/s3hpow12grm5ofmgq9wjt/VID-20260925-WA0182.mp4?rlkey=baj0b6t2qq5kj0ovk5ayz4var&st=uc6ndxwr&raw=1",
+    skills: ["AI Product Commercial", "Luxury Product Animation", "Fluid Simulation", "Cinematic Lighting", "Google Flow", "Runway ML", "CapCut", "Color Grading"],
+    industry: ["Beauty & Cosmetics", "Luxury Goods", "Advertising & Marketing"],
+    category: ["CGI Product Commercial", "AI Luxury Commercial", "Skincare & Beauty", "Motion Design Portfolio"]
+  },
+  {
+    id: 8,
+    title: "Cénée Liquid Blush",
+    description: "A conceptual promotional spot created using advanced AI video generation tools to showcase delicate floral product integration, smooth liquid textures, and aesthetic cosmetic brand storytelling.",
+    videoUrl: "https://www.dropbox.com/scl/fi/kr67l1t1110vnqfp2pju6/VID-20260925-WA0181.mp4?rlkey=4ngfnnopgqwfjlmuf4kegdd8d&st=5adgen9v&raw=1",
+    skills: ["AI Beauty Commercial", "Macro Cinematography", "Color Grading", "Texture Simulation", "Google Flow", "Runway ML", "Prompt Engineering"],
+    industry: ["Beauty & Cosmetics", "Skincare & Makeup", "Advertising & Marketing"],
+    category: ["AI Product Commercial", "Cosmetics Commercial", "3D Product Visualization", "Motion Design Portfolio"]
+  },
+  {
+    id: 9,
+    title: "Gourmet Burger Craft",
+    description: "A conceptual promotional spot created using advanced AI video generation tools to showcase high-octane macro grilling shots, melting cheese textures, and appetizing fast-food brand storytelling.",
+    videoUrl: "https://www.dropbox.com/scl/fi/uvtjihiqe8jz5e02dpmdu/VID-20260925-WA0184.mp4?rlkey=lwrmdx63s1bl9aw7cvqm7tviu&st=oh76cyj9&raw=1",
+    skills: ["Food Cinematography", "Macro Simulation", "Dynamic Editing", "Textural Realism", "Google Flow", "Runway ML", "Prompt Engineering"],
+    industry: ["Food & Beverage", "Culinary & Fast Food", "Advertising & Marketing"],
+    category: ["CGI Product Commercial", "Food Commercial", "Brand Advertisement", "Motion Design Portfolio"]
   }
 ];

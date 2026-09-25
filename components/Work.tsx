@@ -1,7 +1,6 @@
 'use client';
 
 import { projects } from '@/lib/projects';
-import { Play } from 'lucide-react';
 
 export default function Work() {
   return (

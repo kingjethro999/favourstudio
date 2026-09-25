@@ -12,7 +12,7 @@ export default function Hero() {
         className="absolute inset-0 -z-10 opacity-70"
         style={{
           background:
-            'radial-gradient(60% 50% at 20% 20%, oklch(0.28 0 0) 0%, transparent 60%), radial-gradient(50% 40% at 85% 80%, oklch(0.3 0.03 85 / 0.35) 0%, transparent 60%)',
+            'radial-gradient(60% 50% at 20% 20%, #f3b8d1 0%, transparent 70%), radial-gradient(50% 40% at 85% 80%, #efc3dc 0%, transparent 70%)',
         }}
       />
       <div className="mx-auto w-[min(92%,1200px)]">
@@ -28,7 +28,7 @@ export default function Hero() {
         >
           AI Content Creator
           <br />
-          <span className="italic gold-gradient-text">Cinematic Product</span> Video
+          <span className="italic pink-gradient-text">Cinematic Product</span> Video
           Creator
           <br />
           <span className="text-muted-foreground">Video Editor</span>
@@ -70,7 +70,7 @@ export default function Hero() {
             </div>
           </div>
           <div>
-            <div className="font-display text-2xl md:text-3xl lg:text-4xl">8+</div>
+            <div className="font-display text-2xl md:text-3xl lg:text-4xl">9+</div>
             <div className="mt-1 text-[10px] md:text-xs uppercase tracking-widest text-muted-foreground">
               Signature projects
             </div>

@@ -9,10 +9,12 @@ import WhyMe from '@/components/WhyMe';
 import Resume from '@/components/ResumeLoader';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import Preloader from '@/components/Preloader';
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <Preloader />
       <Header />
       <main>
         <Hero />

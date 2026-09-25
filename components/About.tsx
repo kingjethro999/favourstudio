@@ -13,7 +13,7 @@ export default function About() {
         </div>
         <div className="md:col-span-7 md:col-start-6 space-y-4 md:space-y-6 text-base md:text-lg text-muted-foreground leading-relaxed">
           <p>
-            I'm Favour Williams — a video creator specialising in cinematic
+            I&apos;m Favour Williams — a video creator specialising in cinematic
             AI-generated product commercials, creative advertising, and premium
             short-form marketing videos for brands that care about how they look and
             feel.
@@ -22,7 +22,7 @@ export default function About() {
             My work sits at the intersection of art direction, storytelling, and
             emerging AI tools. From concept to final cut, every project is treated
             like a mini film — obsessed over in lighting, pacing, sound, and detail
-            — so the final piece doesn't just sell a product, it elevates the brand
+            — so the final piece doesn&apos;t just sell a product, it elevates the brand
             behind it.
           </p>
           <p className="text-foreground">

@@ -9,12 +9,12 @@ export default function Marquee() {
   ];
 
   return (
-    <div className="border-y border-border py-8 overflow-hidden bg-ink/50">
+    <div className="border-y border-border py-8 overflow-hidden bg-secondary/70">
       <div className="flex gap-14 animate-marquee whitespace-nowrap w-max">
         {items.map((item, index) => (
           <span
             key={index}
-            className="font-display italic text-4xl md:text-6xl text-muted-foreground/60"
+            className="font-display italic text-4xl md:text-6xl text-foreground/65"
           >
             {item}
             <span className="text-accent mx-4">✦</span>
@@ -23,7 +23,7 @@ export default function Marquee() {
         {items.map((item, index) => (
           <span
             key={`dup-${index}`}
-            className="font-display italic text-4xl md:text-6xl text-muted-foreground/60"
+            className="font-display italic text-4xl md:text-6xl text-foreground/65"
           >
             {item}
             <span className="text-accent mx-4">✦</span>
